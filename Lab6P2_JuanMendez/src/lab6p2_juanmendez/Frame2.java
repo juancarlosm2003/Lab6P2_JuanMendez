@@ -97,23 +97,23 @@ public class Frame2 extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         tablapuffies = new javax.swing.JTable();
         jLabel15 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
+        txt_nombre3 = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
+        txt_color = new javax.swing.JTextField();
         jLabel17 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
+        txt_precios3 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         tablajuegos = new javax.swing.JTable();
         jLabel11 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txt_n = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
+        txt_cost = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        txt_re = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
+        txt_exito = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -245,10 +245,7 @@ public class Frame2 extends javax.swing.JFrame {
 
         tablacasa.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+
             },
             new String [] {
                 "Nombre", "Tamaño", "Costo", "X", "y"
@@ -349,10 +346,7 @@ public class Frame2 extends javax.swing.JFrame {
 
         tablapuffies.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+
             },
             new String [] {
                 "Nombre", "Color", "Precios"
@@ -376,6 +370,11 @@ public class Frame2 extends javax.swing.JFrame {
 
         jButton4.setText("Guardar");
         jButton4.setToolTipText("");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -389,11 +388,11 @@ public class Frame2 extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel15)
-                            .addComponent(jTextField10)
+                            .addComponent(txt_nombre3)
                             .addComponent(jLabel16)
-                            .addComponent(jTextField11)
+                            .addComponent(txt_color)
                             .addComponent(jLabel17)
-                            .addComponent(jTextField12, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)))
+                            .addComponent(txt_precios3, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addGap(45, 45, 45)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -408,15 +407,15 @@ public class Frame2 extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_nombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_color, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_precios3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(50, Short.MAX_VALUE))
@@ -426,10 +425,7 @@ public class Frame2 extends javax.swing.JFrame {
 
         tablajuegos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
                 "Nombre", "Costo", "Recompensa", "Porcentaje"
@@ -454,6 +450,11 @@ public class Frame2 extends javax.swing.JFrame {
         jLabel14.setText("Probabilidad de exito;");
 
         jButton2.setText("Crear");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -467,13 +468,13 @@ public class Frame2 extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel11)
-                            .addComponent(jTextField6)
+                            .addComponent(txt_n)
                             .addComponent(jLabel12)
-                            .addComponent(jTextField7)
+                            .addComponent(txt_cost)
                             .addComponent(jLabel13)
-                            .addComponent(jTextField8)
+                            .addComponent(txt_re)
                             .addComponent(jLabel14)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)))
+                            .addComponent(txt_exito, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -490,19 +491,19 @@ public class Frame2 extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_n, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel12)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_cost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_re, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel14)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txt_exito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(37, Short.MAX_VALUE))
@@ -518,7 +519,7 @@ public class Frame2 extends javax.swing.JFrame {
 
     private void botong1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botong1MouseClicked
         // TODO add your handling code here:
-                String nombre, tipo;
+        String nombre, tipo;
         int precio;
         precio = Integer.parseInt(adx_precio.getText());
         nombre = adx_nombre.getText();
@@ -534,14 +535,32 @@ public class Frame2 extends javax.swing.JFrame {
                     = (DefaultTableModel) tableitem.getModel();
             modelo.addRow(newrow);
             tableitem.setModel(modelo);
-            System.out.println("111111111111111111");
-            //tf_edad_maxima.setText(maxima_edad());               
         }
     }//GEN-LAST:event_botong1MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        
+        String nombre;
+        int tamaño, costo, X, Y;
+        nombre = txt_nombre2.getText();
+        tamaño = Integer.parseInt(txt_tamaño.getText());
+        costo = Integer.parseInt(txt_costo.getText());
+        X = Integer.parseInt(txt_X.getText());
+        Y = Integer.parseInt(txt_Y.getText());
+        Casa d = new Casa(nombre,tamaño, costo, X, Y);
+        if (evt.getClickCount() == 0) {
+            Object newrow[] = {
+                nombre,
+                tamaño,
+                costo,
+                X,
+                Y};
+            DefaultTableModel modelo
+                    = (DefaultTableModel) tableitem.getModel();
+            modelo.addRow(newrow);
+            tableitem.setModel(modelo);
+        }
+
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void txt_XMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_XMouseClicked
@@ -551,6 +570,39 @@ public class Frame2 extends javax.swing.JFrame {
     private void txt_XActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_XActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_XActionPerformed
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        // TODO add your handling code here:
+        String nombre, color;
+        int precios;
+        
+        nombre = txt_nombre3.getText();
+        color = txt_color.getText();
+        precios = Integer.parseInt(txt_precios3.getText());
+        Puffies a = new Puffies(nombre,precios,color);
+        if (evt.getClickCount() == 0) {
+            Object newrow[] = {
+                nombre,
+                color,
+                precios};
+            DefaultTableModel modelo
+                    = (DefaultTableModel) tableitem.getModel();
+            modelo.addRow(newrow);
+            tableitem.setModel(modelo);
+        }
+
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        // TODO add your handling code here:
+        String nombre;
+        int costo, recompensa, porcentaje;
+        nombre = txt_n.getText();
+        costo = Integer.parseInt(txt_costo.getText());
+        recompensa = Integer.parseInt(txt_re.getText());
+        porcentaje = Integer.parseInt(txt_re.getText());
+        
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -625,21 +677,21 @@ public class Frame2 extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private javax.swing.JTable tablacasa;
     private javax.swing.JTable tablajuegos;
     private javax.swing.JTable tablapuffies;
     private javax.swing.JTable tableitem;
     private javax.swing.JTextField txt_X;
     private javax.swing.JTextField txt_Y;
+    private javax.swing.JTextField txt_color;
+    private javax.swing.JTextField txt_cost;
     private javax.swing.JTextField txt_costo;
+    private javax.swing.JTextField txt_exito;
+    private javax.swing.JTextField txt_n;
     private javax.swing.JTextField txt_nombre2;
+    private javax.swing.JTextField txt_nombre3;
+    private javax.swing.JTextField txt_precios3;
+    private javax.swing.JTextField txt_re;
     private javax.swing.JTextField txt_tamaño;
     // End of variables declaration//GEN-END:variables
 ArrayList<Items> item = new ArrayList();

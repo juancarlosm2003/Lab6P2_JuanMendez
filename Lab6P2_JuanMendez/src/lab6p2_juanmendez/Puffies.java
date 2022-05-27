@@ -12,16 +12,15 @@ import java.awt.Color;
  * @author Juan Carlos Mendez
  */
 public class Puffies {
+
     String nombre;
     int precio;
-    Color color;
+    String color;
 
     public Puffies() {
     }
-    
-    
 
-    public Puffies(String nombre, int precio, Color color) {
+    public Puffies(String nombre, int precio, String color) {
         this.nombre = nombre;
         this.precio = precio;
         this.color = color;
@@ -43,11 +42,11 @@ public class Puffies {
         this.precio = precio;
     }
 
-    public Color getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(Color color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
@@ -55,5 +54,5 @@ public class Puffies {
     public String toString() {
         return "Puffies{" + "nombre=" + nombre + ", precio=" + precio + ", color=" + color + '}';
     }
-    
+
 }

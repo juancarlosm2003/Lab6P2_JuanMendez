@@ -10,18 +10,29 @@ package lab6p2_juanmendez;
  * @author Juan Carlos Mendez
  */
 public class Casa {
+    String nombre;
 
     int tamaño, costo, cx, cy;
 
     public Casa() {
     }
 
-    public Casa(int tamaño, int costo, int cx, int cy) {
+    public Casa(String nombre, int tamaño, int costo, int cx, int cy) {
+          this.nombre = nombre;
         this.tamaño = tamaño;
         this.costo = costo;
         this.cx = cx;
         this.cy = cy;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
 
     public int getTamaño() {
         return tamaño;
@@ -55,9 +66,5 @@ public class Casa {
         this.cy = cy;
     }
 
-    @Override
-    public String toString() {
-        return "Casa{" + "tama\u00f1o=" + tamaño + ", costo=" + costo + ", cx=" + cx + ", cy=" + cy + '}';
-    }
 
 }
