@@ -12,6 +12,7 @@ package lab6p2_juanmendez;
 public class Items {
     String nombre;
     int precio;
+    String tipo;
 
     public Items() {
     }
